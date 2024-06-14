@@ -1,0 +1,48 @@
+/* Common Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --background-custom-color: #289bde;
+  --price-color: #43a8e2;
+  --explore-background: #f4fafd;
+}
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.grid-aligning {
+  position: absolute;
+  top: 7%;
+}
+
+.btn-color {
+  color: var(--background-custom-color);
+}
+
+.bg-color {
+  background-color: var(--background-custom-color);
+}
+
+.price-color {
+  color: var(--price-color);
+}
+.explore-background {
+  background-color: var(--explore-background);
+}
+
+.text-golden {
+  color: #fcbf25;
+}
+
+@media only screen and (max-width: 576px) {
+  .fsc {
+    font-size: 20px;
+  }
+}
