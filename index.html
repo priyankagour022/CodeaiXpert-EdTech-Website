@@ -7,7 +7,7 @@
   <title>CodeaiXpert</title>
   <!-- * Bootstrap css CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
   <!-- Font-Awesome -->
   <script src="https://kit.fontawesome.com/f43c8ff667.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -15,21 +15,29 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- ** Custom Css  -->
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="css/style3.css" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     .company-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; /* Adjust the gap as needed */
-        margin: 20px 0; /* Optional: Add some margin around the container */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      /* Adjust the gap as needed */
+      margin: 20px 0;
+      /* Optional: Add some margin around the container */
     }
+
     .company-logos img {
-        width: 150px; /* Set the width you prefer */
-        height: 100px; /* Set the height you prefer */
-        object-fit: contain;
+      width: 150px;
+      /* Set the width you prefer */
+      height: 100px;
+      /* Set the height you prefer */
+      object-fit: contain;
     }
-</style>
+  </style>
 </head>
 
 <body>
@@ -69,7 +77,8 @@
                 <a class="text-decoration-none" href="#register">Register</a>
               </button>
             </form>
-            <div style="margin: 10px;"></div> <!-- Inline styling for spacing between Register button and Login button-->
+            <div style="margin: 10px;"></div>
+            <!-- Inline styling for spacing between Register button and Login button-->
             <form class="d-flex" role="search">
               <button type="button" class="btn btn-outline-primary">
                 <a class="text-decoration-none" href="login.html">Login</a>
@@ -166,7 +175,8 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <a href="html/course1.html" class="card-title fw-semibold">codeAIXpert Machine Learning and Generative
+                      <a href="html/course1.html" class="card-title fw-semibold">codeAIXpert Machine Learning and
+                        Generative
                         AI course</a>
                       <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
                         the card.</p>
@@ -468,7 +478,7 @@
       </div>
     </section>
     <!-- Meet Successful Students end-->
-  
+
     <!-- Title header Section -->
     <section class="container my-5">
       <div class="text-center">
@@ -553,86 +563,34 @@
     </section>
     <!-- Title header Section end-->
 
-    <!-- FAQ Accordion  -->
-    <section class="container">
-      <div class="mx-lg-5 px-lg-5">
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne">
-                Difference of Flexbox and Grid?
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-              aria-labelledby="panelsStayOpen-headingOne">
-              <div class="accordion-body">
-                <strong>Grid is made for two-dimensional layout while Flexbox is for one.</strong>This means Flexbox can
-                work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility
-                while working on either element (row or column).But grid will give you more option in both axis layout
-                making. Grid used to use overall layout structuring while flexbox vastly used to centering and aligning
-                inside elements.
-              </div>
-            </div>
+    <section class="faq-container">
+     
+      <div class="faq-item">
+          <button class="faq-question">Difference of Flexbox and Grid?</button>
+          <div class="faq-answer">
+              <p><strong>Grid is made for two-dimensional layout while Flexbox is for one.</strong> This means Flexbox can work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility while working on either element (row or column). But grid will give you more option in both axis layout making. Grid used to use overall layout structuring while flexbox vastly used to centering and aligning inside elements.</p>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                What's the difference between Bootstrap and Tailwind?
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingTwo">
-              <div class="accordion-body">
-                <strong>The significant difference between Tailwind CSS and Bootstrap is that Tailwind offers
-                  predesigned widgets to build a site from scratch with fast UI development, while Bootstrap comes with
-                  a set of pre-styled responsive, mobile-first components that possess a definite UI kit.</strong>
-                According to me, the bootstrap much more beginner friendly and the tailwind offers much more flexibity
-                in the design. Both the frameworks has a variety of features and UI components as well.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree">
-                What is the CSS Box model?
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingThree">
-              <div class="accordion-body">
-                <strong>In vanila CSS every element has a box model.In CSS, the term "box model" is used when talking
-                  about design and layout.</strong> CSS box model consists of content,padding,border and margin.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseFour">
-                What is semantic tag?
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingFour">
-              <div class="accordion-body">
-                <strong>The tags that provide meaning to an HTML page rather than just presentation is called semantic
-                  tag</strong>Simply put which tags are much more meaningful and It makes HTML more comprehensible by
-                better defining the different sections and layout of web pages.
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- FAQ Accordion end-->
-
+      <div class="faq-item">
+          <button class="faq-question">What's the difference between Bootstrap and Tailwind?</button>
+          <div class="faq-answer">
+              <p><strong>The significant difference between Tailwind CSS and Bootstrap is that Tailwind offers predesigned widgets to build a site from scratch with fast UI development, while Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit.</strong> According to me, the bootstrap much more beginner friendly and the tailwind offers much more flexibility in the design. Both the frameworks have a variety of features and UI components as well.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <button class="faq-question">What is the CSS Box model?</button>
+          <div class="faq-answer">
+              <p><strong>In vanilla CSS every element has a box model. In CSS, the term "box model" is used when talking about design and layout.</strong> CSS box model consists of content, padding, border, and margin.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <button class="faq-question">What is semantic tag?</button>
+          <div class="faq-answer">
+              <p><strong>The tags that provide meaning to an HTML page rather than just presentation are called semantic tags.</strong> Simply put, these tags are much more meaningful, and it makes HTML more comprehensible by better defining the different sections and layout of web pages.</p>
+          </div>
+      </div>
+  </section>
+  <script src="scripts.js"></script>
     <!-- Trusted Companies Section -->
     <section class="container d-none d-md-none d-lg-block my-5">
       <h1 class="text-center fw-bolder">
@@ -644,29 +602,29 @@
         <img src="./images/company/company-3.png" alt="">
         <img src="./images/company/company-4.png" alt="">
         <img src="./images/company/company-5.png" alt="">
-        <img src="./images/company/company-6.png" alt="" >
+        <img src="./images/company/company-6.png" alt="">
       </div>
 
-        <div class="container">
-          <div class="company-logos text-center mt-5">
-              <img src="./images/company/ajio.png" alt="AJIO">
-              <img src="./images/company/atos.png" alt="Atos">
-              <img src="./images/company/Axos.png" alt="Axos">
-              <img src="./images/company/blenheim chalcot.png" alt="Blenheim Chalcot" style="width: 300px; height:100px;">
-              <img src="./images/company/dell.png" alt="Dell">
-              <img src="./images/company/Energy.png" alt="Energy">
-              <img src="./images/company/ey.png" alt="EY">
-              <img src="./images/company/IBM.png" alt="IBM">
-              <img src="./images/company/intel.png" alt="Intel">
-              <img src="./images/company/oracle.png" alt="Oracle">
-              <img src="./images/company/paypal.png" alt="Paypal">
-              <img src="./images/company/Progress.png" alt="Progress">
-              <img src="./images/company/samsung.png" alt="Samsung">
-              <img src="./images/company/tcs.png" alt="TCS">
-              <img src="./images/company/tech.png" alt="Tech">
-              <img src="./images/company/volkswagen.jpeg" alt="Volkswagen">
-              <img src="./images/company/wipro.png" alt="Wipro">
-          </div>
+      <div class="container">
+        <div class="company-logos text-center mt-5">
+          <img src="./images/company/ajio.png" alt="AJIO">
+          <img src="./images/company/atos.png" alt="Atos">
+          <img src="./images/company/Axos.png" alt="Axos">
+          <img src="./images/company/blenheim chalcot.png" alt="Blenheim Chalcot">
+          <img src="./images/company/dell.png" alt="Dell">
+          <img src="./images/company/Energy.png" alt="Energy">
+          <img src="./images/company/ey.png" alt="EY">
+          <img src="./images/company/IBM.png" alt="IBM">
+          <img src="./images/company/intel.png" alt="Intel">
+          <img src="./images/company/oracle.png" alt="Oracle">
+          <img src="./images/company/paypal.png" alt="Paypal">
+          <img src="./images/company/Progress.png" alt="Progress">
+          <img src="./images/company/samsung.png" alt="Samsung">
+          <img src="./images/company/tcs.png" alt="TCS">
+          <img src="./images/company/tech.png" alt="Tech">
+          <img src="./images/company/volkswagen.jpeg" alt="Volkswagen">
+          <img src="./images/company/wipro.png" alt="Wipro">
+        </div>
     </section>
     <!-- Trusted Companies Section -->
   </main>
@@ -680,11 +638,11 @@
       <p>
         <small>
           CodeKart Solutions Private Limited<br>
-          
+
         </small>
         <small>
           Phase-1, Saraswati Vihar, Duplex Number-2,<br>
-           Backside of Mani Tribhuvan<br> Bhubaneswar, Odisha 751024
+          Backside of Mani Tribhuvan<br> Bhubaneswar, Odisha 751024
         </small>
       </p>
       <p>
@@ -738,8 +696,10 @@
   <!-- dependencies script for testimonials -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
-  
+
+
 </body>
 
 </html>
