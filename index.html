@@ -41,19 +41,15 @@
   <!-- change hover for register and login button -->
   <style>
     .btn-outline-primary:hover {
-        background-color: #ccc; /* Gray color on hover */
-        border-color: #ccc; /* Gray color for border on hover */
-        color: #000; /* Text color on hover */
+      background-color: #ccc;
+      /* Gray color on hover */
+      border-color: #ccc;
+      /* Gray color for border on hover */
+      color: #000;
+      /* Text color on hover */
     }
-</style>
-<style>
-  .carousel-item {
-      text-align: center; /* Center align content */
-  }
-  .text-golden {
-      color: goldenrod; /* Custom color for stars */
-  }
-</style>
+  </style>
+  
 </head>
 
 <body>
@@ -515,7 +511,7 @@
                   <div class="row g-3">
                       <!-- Testimonial 1 -->
                       <div class="col-lg-6 col-md-12 col-12">
-                          <div class="card p-4">
+                          <div class="card p-4 h-100">
                               <div class="card-body">
                                   <div class="d-flex justify-content-between">
                                       <div>
@@ -532,7 +528,7 @@
                                   <p class="card-text my-2">Enrolling in this course was a game-changer for my career as a software engineer. 
                                       The depth of knowledge and practical skills I gained here were instrumental in advancing my programming abilities. 
                                       It's truly the best investment I've made in my professional development.</p>
-                                  <div class="d-flex">
+                                  <div class="d-flex mt-auto">
                                       <div class="ms-3">
                                           <h3>Chinmoyee Mohapatra</h3>
                                           <small>Software Engineer @ ServiceNow</small>
@@ -544,7 +540,7 @@
   
                       <!-- Testimonial 2 -->
                       <div class="col-lg-6 col-md-12 col-12">
-                          <div class="card p-4">
+                          <div class="card p-4 h-100">
                               <div class="card-body">
                                   <div class="d-flex justify-content-between">
                                       <div>
@@ -561,7 +557,7 @@
                                   <p class="card-text my-2">As a seasoned developer, I can confidently say this course is top-tier. 
                                       It not only refreshed my understanding of modern software development practices but also introduced me to advanced techniques that have directly impacted my projects. 
                                       Highly recommend it for anyone serious about staying ahead in the tech industry.</p>
-                                  <div class="d-flex">
+                                  <div class="d-flex mt-auto">
                                       <div class="ms-3">
                                           <h3>Abhishek Kumar</h3>
                                           <small>Software Engineer @ Druva</small>
@@ -578,7 +574,7 @@
                   <div class="row g-3">
                       <!-- Testimonial 3 -->
                       <div class="col-lg-6 col-md-12 col-12">
-                          <div class="card p-4">
+                          <div class="card p-4 h-100">
                               <div class="card-body">
                                   <div class="d-flex justify-content-between">
                                       <div>
@@ -596,7 +592,7 @@
                                       It provided a structured approach to learning complex algorithms and statistical techniques, all while emphasizing practical application. 
                                       The insights gained here have not only boosted my confidence but also opened doors to new career opportunities. 
                                       Highly recommended for anyone passionate about data-driven decision making.</p>
-                                  <div class="d-flex">
+                                  <div class="d-flex mt-auto">
                                       <div class="ms-3">
                                           <h3>Deme Sai Kiran</h3>
                                           <small>Data Scientist @ Samsung</small>
@@ -608,7 +604,7 @@
   
                       <!-- Testimonial 4 -->
                       <div class="col-lg-6 col-md-12 col-12">
-                          <div class="card p-4">
+                          <div class="card p-4 h-100">
                               <div class="card-body">
                                   <div class="d-flex justify-content-between">
                                       <div>
@@ -626,7 +622,7 @@
                                       The curriculum is comprehensive and up-to-date with the latest tools and methodologies. 
                                       The practical exercises and real-world projects have sharpened my analytical skills immensely. 
                                       It's truly a must for anyone looking to excel in the field of data science.</p>
-                                  <div class="d-flex">
+                                  <div class="d-flex mt-auto">
                                       <div class="ms-3">
                                           <h3>Priyanka Gour</h3>
                                           <small>Data Scientist @ Progress</small>
@@ -665,33 +661,44 @@
     <!-- Title header Section end-->
 
     <section class="faq-container">
-     
+
       <div class="faq-item">
-          <button class="faq-question">Difference of Flexbox and Grid?</button>
-          <div class="faq-answer">
-              <p><strong>Grid is made for two-dimensional layout while Flexbox is for one.</strong> This means Flexbox can work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility while working on either element (row or column). But grid will give you more option in both axis layout making. Grid used to use overall layout structuring while flexbox vastly used to centering and aligning inside elements.</p>
-          </div>
+        <button class="faq-question">Difference of Flexbox and Grid?</button>
+        <div class="faq-answer">
+          <p><strong>Grid is made for two-dimensional layout while Flexbox is for one.</strong> This means Flexbox can
+            work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility
+            while working on either element (row or column). But grid will give you more option in both axis layout
+            making. Grid used to use overall layout structuring while flexbox vastly used to centering and aligning
+            inside elements.</p>
+        </div>
       </div>
       <div class="faq-item">
-          <button class="faq-question">What's the difference between Bootstrap and Tailwind?</button>
-          <div class="faq-answer">
-              <p><strong>The significant difference between Tailwind CSS and Bootstrap is that Tailwind offers predesigned widgets to build a site from scratch with fast UI development, while Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit.</strong> According to me, the bootstrap much more beginner friendly and the tailwind offers much more flexibility in the design. Both the frameworks have a variety of features and UI components as well.</p>
-          </div>
+        <button class="faq-question">What's the difference between Bootstrap and Tailwind?</button>
+        <div class="faq-answer">
+          <p><strong>The significant difference between Tailwind CSS and Bootstrap is that Tailwind offers predesigned
+              widgets to build a site from scratch with fast UI development, while Bootstrap comes with a set of
+              pre-styled responsive, mobile-first components that possess a definite UI kit.</strong> According to me,
+            the bootstrap much more beginner friendly and the tailwind offers much more flexibility in the design. Both
+            the frameworks have a variety of features and UI components as well.</p>
+        </div>
       </div>
       <div class="faq-item">
-          <button class="faq-question">What is the CSS Box model?</button>
-          <div class="faq-answer">
-              <p><strong>In vanilla CSS every element has a box model. In CSS, the term "box model" is used when talking about design and layout.</strong> CSS box model consists of content, padding, border, and margin.</p>
-          </div>
+        <button class="faq-question">What is the CSS Box model?</button>
+        <div class="faq-answer">
+          <p><strong>In vanilla CSS every element has a box model. In CSS, the term "box model" is used when talking
+              about design and layout.</strong> CSS box model consists of content, padding, border, and margin.</p>
+        </div>
       </div>
       <div class="faq-item">
-          <button class="faq-question">What is semantic tag?</button>
-          <div class="faq-answer">
-              <p><strong>The tags that provide meaning to an HTML page rather than just presentation are called semantic tags.</strong> Simply put, these tags are much more meaningful, and it makes HTML more comprehensible by better defining the different sections and layout of web pages.</p>
-          </div>
+        <button class="faq-question">What is semantic tag?</button>
+        <div class="faq-answer">
+          <p><strong>The tags that provide meaning to an HTML page rather than just presentation are called semantic
+              tags.</strong> Simply put, these tags are much more meaningful, and it makes HTML more comprehensible by
+            better defining the different sections and layout of web pages.</p>
+        </div>
       </div>
-  </section>
-  <script src="scripts.js"></script>
+    </section>
+    <script src="scripts.js"></script>
     <!-- Trusted Companies Section -->
     <section class="container d-none d-md-none d-lg-block my-5">
       <h1 class="text-center fw-bolder">
