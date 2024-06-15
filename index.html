@@ -46,6 +46,14 @@
         color: #000; /* Text color on hover */
     }
 </style>
+<style>
+  .carousel-item {
+      text-align: center; /* Center align content */
+  }
+  .text-golden {
+      color: goldenrod; /* Custom color for stars */
+  }
+</style>
 </head>
 
 <body>
@@ -498,115 +506,150 @@
     </section>
     <!-- Title header Section end-->
 
-    <!-- Some Students Feedback -->
-    <section class="container">
-      <div class="row g-3">
-        <div class="col-lg-6 col-md-12 col-12" style="position:relative;">
-          <div class="card p-4">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <img src="./images/comma.png" class="img-fluid" alt="">
-                </div>
-                <div class="text-golden">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
+    <section class="container mt-5">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+  
+              <!-- Testimonial Group 1 -->
+              <div class="carousel-item active">
+                  <div class="row g-3">
+                      <!-- Testimonial 1 -->
+                      <div class="col-lg-6 col-md-12 col-12">
+                          <div class="card p-4">
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                      <div>
+                                          <img src="./images/comma.png" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="text-golden">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star-half-stroke"></i>
+                                      </div>
+                                  </div>
+                                  <p class="card-text my-2">Enrolling in this course was a game-changer for my career as a software engineer. 
+                                      The depth of knowledge and practical skills I gained here were instrumental in advancing my programming abilities. 
+                                      It's truly the best investment I've made in my professional development.</p>
+                                  <div class="d-flex">
+                                      <div class="ms-3">
+                                          <h3>Chinmoyee Mohapatra</h3>
+                                          <small>Software Engineer @ ServiceNow</small>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Testimonial 2 -->
+                      <div class="col-lg-6 col-md-12 col-12">
+                          <div class="card p-4">
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                      <div>
+                                          <img src="./images/comma.png" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="text-golden">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star-half-stroke"></i>
+                                      </div>
+                                  </div>
+                                  <p class="card-text my-2">As a seasoned developer, I can confidently say this course is top-tier. 
+                                      It not only refreshed my understanding of modern software development practices but also introduced me to advanced techniques that have directly impacted my projects. 
+                                      Highly recommend it for anyone serious about staying ahead in the tech industry.</p>
+                                  <div class="d-flex">
+                                      <div class="ms-3">
+                                          <h3>Abhishek Kumar</h3>
+                                          <small>Software Engineer @ Druva</small>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <p class="card-text my-2">Enrolling in this course was a game-changer for my career as a software engineer. 
-                The depth of knowledge and practical skills I gained here were instrumental in advancing my programming abilities. 
-                It's truly the best investment I've made in my professional development.</p>
-              <div class="d-flex">
-                <div class="ms-3">
-                  <h3>Chinmoyee Mohapatra</h3>
-                  <small>Software Engineer@ServiceNow</small>
-                </div>
+  
+              <!-- Testimonial Group 2 -->
+              <div class="carousel-item">
+                  <div class="row g-3">
+                      <!-- Testimonial 3 -->
+                      <div class="col-lg-6 col-md-12 col-12">
+                          <div class="card p-4">
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                      <div>
+                                          <img src="./images/comma.png" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="text-golden">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star-half-stroke"></i>
+                                      </div>
+                                  </div>
+                                  <p class="card-text my-2">This course is a gem for aspiring data scientists like myself. 
+                                      It provided a structured approach to learning complex algorithms and statistical techniques, all while emphasizing practical application. 
+                                      The insights gained here have not only boosted my confidence but also opened doors to new career opportunities. 
+                                      Highly recommended for anyone passionate about data-driven decision making.</p>
+                                  <div class="d-flex">
+                                      <div class="ms-3">
+                                          <h3>Deme Sai Kiran</h3>
+                                          <small>Data Scientist @ Samsung</small>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Testimonial 4 -->
+                      <div class="col-lg-6 col-md-12 col-12">
+                          <div class="card p-4">
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                      <div>
+                                          <img src="./images/comma.png" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="text-golden">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star-half-stroke"></i>
+                                      </div>
+                                  </div>
+                                  <p class="card-text my-2">I couldn't be more satisfied with this course as a data scientist. 
+                                      The curriculum is comprehensive and up-to-date with the latest tools and methodologies. 
+                                      The practical exercises and real-world projects have sharpened my analytical skills immensely. 
+                                      It's truly a must for anyone looking to excel in the field of data science.</p>
+                                  <div class="d-flex">
+                                      <div class="ms-3">
+                                          <h3>Priyanka Gour</h3>
+                                          <small>Data Scientist @ Progress</small>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
+  
           </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="card p-4">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <img src="./images/comma.png" class="img-fluid" alt="">
-                </div>
-                <div class="text-golden">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-              </div>
-              <p class="card-text my-2">As a seasoned developer, I can confidently say this course is top-tier. It not only refreshed my understanding of modern software development practices but also introduced me to advanced techniques that have directly impacted my projects. Highly recommend it for anyone serious about staying ahead in the tech industry.</p>
-              <div class="d-flex">
-                <div class="ms-3">
-                  <h3>Abhishek Kumar</h3>
-                  <small>Software Engineer@Druva</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="card p-4">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <img src="./images/comma.png" class="img-fluid" alt="">
-                </div>
-                <div class="text-golden">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-              </div>
-              <p class="card-text my-2">This course is a gem for aspiring data scientists like myself. It provided a structured approach to learning complex algorithms and statistical techniques, all while emphasizing practical application. The insights gained here have not only boosted my confidence but also opened doors to new career opportunities. Highly recommended for anyone passionate about data-driven decision making.</p>
-              <div class="d-flex">
-                <div class="ms-3">
-                  <h3>Deme Sai Kiran</h3>
-                  <small>Data Scientist@Samsung</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="card p-4">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <img src="./images/comma.png" class="img-fluid" alt="">
-                </div>
-                <div class="text-golden">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-              </div>
-              <p class="card-text my-2">I couldn't be more satisfied with this course as a data scientist. 
-                The curriculum is comprehensive and up-to-date with the latest tools and methodologies. The practical exercises and real-world projects have sharpened my analytical skills immensely.
-                 It's truly a must for anyone looking to excel in the field of data science.</p>
-              <div class="d-flex">
-                <div class="ms-3">
-                  <h3>Priyanka Gour</h3>
-                  <small>Data Scientist@Progress</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
       </div>
-    </section>
+  </section>
+  
     <!-- Some Students Feedback end-->
 
     <!-- Title header Section -->
