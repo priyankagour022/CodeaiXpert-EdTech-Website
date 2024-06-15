@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeaiXpert</title>
+  <!-- * Bootstrap css CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- Font-Awesome -->
+  <script src="https://kit.fontawesome.com/f43c8ff667.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- ** Custom Css  -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Adjust the gap as needed */
+        margin: 20px 0; /* Optional: Add some margin around the container */
+    }
+    .company-logos img {
+        width: 150px; /* Set the width you prefer */
+        height: 100px; /* Set the height you prefer */
+        object-fit: contain;
+    }
+</style>
+</head>
+
+<body>
+  <header>
+    <section class="container">
+      <!-- ** Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-semibold fs-2" href="#home"><i class="fa-solid fa-graduation-cap"></i>
+            CodeaiXpert</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item m-3">
+                <a class="nav-link" aria-current="page" href="#home" id="home">Home</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link" href="#success">Success</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link" href="#register">Register</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <button type="button" class="btn btn-outline-primary">
+                <a class="text-decoration-none" href="#register">Register</a>
+              </button>
+            </form>
+            <div style="margin: 10px;"></div> <!-- Inline styling for spacing between Register button and Login button-->
+            <form class="d-flex" role="search">
+              <button type="button" class="btn btn-outline-primary">
+                <a class="text-decoration-none" href="login.html">Login</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- * Navbar -->
+    </section>
+
+    <section class="container">
+      <!-- ** Carosel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/cover/cover-1.png" class="d-block w-100 img-fluid" alt="..." />
+            <div class="carousel-caption">
+              <h1 class="fw-bolder fsc">Begin Your Data Science Journey with Our Expert Assistance</h1>
+              <p>
+                Conquer a job at top MNCs with our placement guaranteed program.
+              </p>
+              <!-- <button type="button" class="btn btn-primary bg-color px-lg-4 py-lg-2 fs-5">
+                Get Started
+              </button> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cover/cover-2re.png" class="d-block w-100 img-fluid" alt="..." />
+            <div class="carousel-caption">
+              <h1 class="fw-bolder fsc">Get Started with Generative AI</h1>
+              <p>
+                Face the AI/ML challenges. We're here to assists you.
+              </p>
+              <!-- <button type="button" class="btn btn-primary bg-color px-lg-4 py-lg-2 fs-5">
+                Get Started
+              </button> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cover/cover-3re.jpeg" class="d-block w-100 img-fluid" alt="..." />
+            <div class="carousel-caption">
+              <h1 class="fw-bolder fsc">Get Started with codeAIXpert job guaranteed course</h1>
+              <p>
+                Secure a job in six months.
+              </p>
+              <!-- <button type="button" class="btn btn-primary bg-color px-lg-4 py-lg-2 fs-5">
+                Get Started
+              </button> -->
+            </div>
+          </div>
+        </div>
+        <!-- Carosel control -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- ** Carosel -->
+    </section>
+  </header>
+
+  <!-- Main section -->
+  <main>
+    <!-- Title header Section -->
+    <section class="container my-5">
+      <div class="text-center" id="courses">
+        <h1 class="fw-bolder">Discover Our Popular Courses</h1>
+        <p>
+          Our teachers are icons, experts, and industry rock stars excited to share their experience, wisdom, and
+          trusted tools with you.
+        </p>
+      </div>
+    </section>
+    <!-- Title header Section -->
+    <!-- Card of Courses -->
+    <section class="container my-5">
+      <div class="row my-5">
+        <div class="col-md-12">
+
+          <div class="row g-4 mb-4">
+            <div class="col-md-12 col-lg-6">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#"><img src="images/course/course-1.png" class="w-100 h-100 img-fluid"
+                        alt="Courses Photo"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <a href="html/course1.html" class="card-title fw-semibold">codeAIXpert Machine Learning and Generative
+                        AI course</a>
+                      <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
+                        the card.</p>
+                      <h5 class="text-primary fs-6 fw-bold">Price : Rs. 19,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#"><img src="images/course/course-2.png" class="w-100 h-100 img-fluid"
+                        alt="Courses Photo"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <a href="html/course2.html" class="card-title fw-semibold">Python Basic to advanced</a>
+                      <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
+                        the card.</p>
+                      <h5 class="text-primary fs-6 fw-bold">Price : Rs. 4,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#"><img src="images/course/course-3.png" class="w-100 h-100 img-fluid"
+                        alt="Courses Photo"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+
+                      <a href="html/course3.html" class="card-title fw-semibold">Machine learning basic to advanced</a>
+                      <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
+                        the card.</p>
+                      <h5 class="text-primary fs-6 fw-bold">Price : Rs. 4,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#"><img src="images/course/course-4.png" class="w-100 h-100 img-fluid"
+                        alt="Courses Photo"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+
+                      <a href="html/course4.html" class="card-title fw-semibold">Structure Query Language</a>
+                      <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
+                        the card.</p>
+                      <h5 class="text-primary fs-6 fw-bold">Price : Rs. 4,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#"><img src="images/course/course-5.png" class="w-100 h-100 img-fluid"
+                        alt="Courses Photo"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+
+                      <a href="html/course5.html" class="card-title fw-semibold">Generative AI course</a>
+                      <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
+                        the card.</p>
+                      <h5 class="text-primary fs-6 fw-bold">Price : Rs. 9,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#"><img src="images/course/course-6.png" class="w-100 h-100 img-fluid"
+                        alt="Courses Photo"></a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+
+                      <a href="html/course6.html" class="card-title fw-semibold">Java DSA couorse</a>
+                      <p class="text-muted">Some quick example text to build on the card title and make up the bulk of
+                        the card.</p>
+                      <h5 class="text-primary fs-6 fw-bold">Price : Rs. 4,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a href="moreCources.html" class="text-decoration-none text-center d-block mx-auto pt-4 pb-5">
+            <button type="submit" class="btn btn-primary rounded-1">See More Courses</button>
+          </a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#courseCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#courseCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+      </div>
+    </section>
+    <!-- Card of Courses end-->
+
+    <!-- Ready to join -->
+    <section class="container p-5 bg-color text-white rounded-2 my-5" id="register">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-12 text-lg-start text-md-center text-center ps-5 my-auto">
+          <h1>
+            Ready to join?
+          </h1>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-12 col-12 text-lg-start text-md-center text-center my-auto ms-auto d-flex justify-content-center">
+          <button type="button" class="btn btn-light btn-color btn-lg" data-bs-toggle="modal" data-bs-target="#mymodal"
+            data-bs-whatever="@mdo" data-bs-placement="top" title="Subscribe to my Shop">
+            Register Now
+          </button>
+
+          <!-- Modal  -->
+          <div class="modal text-dark" tabindex="-1" id="mymodal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Registration</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <!-- <label for="firstName" class="form-label">First Name: </label> -->
+                      <input type="text" class="form-control" name="first_name" id="firstName"
+                        placeholder="Enter first name " required>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- <label for="lastName" class="form-label">Last Name: </label> -->
+                      <input type="text" class="form-control" name="last_name" id="lastName"
+                        placeholder="Enter last name " required>
+                    </div>
+                    <div class="col-12">
+                      <!-- <label for="emailAddress" class="form-label">Email Address: </label> -->
+                      <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address "
+                        required>
+                    </div>
+                    <div class="col-12">
+                      <!-- <label for="password" class="form-label">Password: </label> -->
+                      <input type="password" class="form-control" id="password" placeholder="Enter password " required>
+                    </div>
+                    <div class="col-12">
+                      <!-- <label for="address" class="form-label">Address: </label> -->
+                      <textarea class="form-control" placeholder="Enter your address " rows="3" id="address"
+                        name="address" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="termsConditionCheck">
+                        <label class="form-check-label" for="termsConditionCheck">
+                          I Accept <a href="terms_conditions.html">Terms and Condition</a>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="form-control btn btn-primary">Register</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Ready to join end-->
+    <section class="container my-5" id="success">
+      <h1 class="fw-bolder">Meet Our Successful Students</h1>
+      <p>Below you'll find our students who are working on the lead tech companies</p>
+    </section>
+    <!-- Meet Successful Students -->
+    <section class="container my-5">
+      <div id="studentCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-1.enc" class="card-img-top img-fluid" alt="Chinmoyee Mohapatra">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Chinmoyee Mohapatra</p>
+                    <small class="text-muted">Software Engineer@ServiceNow</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-3.jpeg" class="card-img-top img-fluid" alt="Umme Habiba">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Deme Sai Kiran</p>
+                    <small class="text-muted">Data Scientist@Samsung</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-2.jpeg" class="card-img-top img-fluid" alt="Fahim Faisal">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Abhishek Kumar</p>
+                    <small class="text-muted">Software Engineer@Druva</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-4.jpeg" class="card-img-top img-fluid" alt="Mehnaz Tabbasum">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Priyanka Gour</p>
+                    <small class="text-muted">Data Scientist@Progress</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Additional carousel items if more students are to be displayed -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-1.enc" class="card-img-top img-fluid" alt="Chinmoyee Mohapatra">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Chinmoyee Mohapatra</p>
+                    <small class="text-muted">Software Engineer@ServiceNow</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-3.jpeg" class="card-img-top img-fluid" alt="Umme Habiba">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Deme Sai Kiran</p>
+                    <small class="text-muted">Data Scientist@Samsung</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-2.jpeg" class="card-img-top img-fluid" alt="Fahim Faisal">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Abhishek Kumar</p>
+                    <small class="text-muted">Software Engineer@Druva</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                  <img src="./images/student/student-4.jpeg" class="card-img-top img-fluid" alt="Mehnaz Tabbasum">
+                  <div class="card-body">
+                    <p class="fw-bolder fs-5">Priyanka Gour</p>
+                    <small class="text-muted">Data Scientist@Progress</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#studentCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#studentCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Meet Successful Students end-->
+  
+    <!-- Title header Section -->
+    <section class="container my-5">
+      <div class="text-center">
+        <h1 class="fw-bolder">Testimonials</h1>
+        <p>
+          Below you'll get some fantastic reviews from our students. They also told about our future planing.
+        </p>
+      </div>
+    </section>
+    <!-- Title header Section end-->
+
+    <!-- Some Students Feedback -->
+    <section class="container">
+      <div class="row g-3">
+        <div class="col-lg-6 col-md-12 col-12" style="position:relative;">
+          <div class="card p-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <img src="./images/comma.png" class="img-fluid" alt="">
+                </div>
+                <div class="text-golden">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <p class="card-text my-2">This is the best course money can Buy. It helps me to shape my carrier and my
+                future as well. I've learnt a lot from this course. One of the best platform to learn</p>
+              <div class="d-flex">
+                <img src="./images/student/student-5" class="img-fluid" alt="">
+                <div class="ms-3">
+                  <h3>Md Kamrul Hasan</h3>
+                  <small>Web Developer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="card p-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <img src="./images/comma.png" class="img-fluid" alt="">
+                </div>
+                <div class="text-golden">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <p class="card-text my-2">This is the best course money can Buy. It helps me to shape my carrier and my
+                future as well. I've learnt a lot from this course. One of the best platform to learn</p>
+              <div class="d-flex">
+                <img src="./images/student/student-6.png" class="img-fluid" alt="">
+                <div class="ms-3">
+                  <h3>Umme Habiba</h3>
+                  <small>Motion Grapics</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Some Students Feedback end-->
+
+    <!-- Title header Section -->
+    <section class="container my-5" id="faq">
+      <div class="text-center">
+        <h1 class="fw-bolder">Frequently Asked Questions</h1>
+        <p>
+          Below you'll get some of the frequently asked questions, also the answers are included with the corresponding
+          questions.
+        </p>
+      </div>
+    </section>
+    <!-- Title header Section end-->
+
+    <!-- FAQ Accordion  -->
+    <section class="container">
+      <div class="mx-lg-5 px-lg-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Difference of Flexbox and Grid?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>Grid is made for two-dimensional layout while Flexbox is for one.</strong>This means Flexbox can
+                work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility
+                while working on either element (row or column).But grid will give you more option in both axis layout
+                making. Grid used to use overall layout structuring while flexbox vastly used to centering and aligning
+                inside elements.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                What's the difference between Bootstrap and Tailwind?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>The significant difference between Tailwind CSS and Bootstrap is that Tailwind offers
+                  predesigned widgets to build a site from scratch with fast UI development, while Bootstrap comes with
+                  a set of pre-styled responsive, mobile-first components that possess a definite UI kit.</strong>
+                According to me, the bootstrap much more beginner friendly and the tailwind offers much more flexibity
+                in the design. Both the frameworks has a variety of features and UI components as well.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                What is the CSS Box model?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>In vanila CSS every element has a box model.In CSS, the term "box model" is used when talking
+                  about design and layout.</strong> CSS box model consists of content,padding,border and margin.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour">
+                What is semantic tag?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <strong>The tags that provide meaning to an HTML page rather than just presentation is called semantic
+                  tag</strong>Simply put which tags are much more meaningful and It makes HTML more comprehensible by
+                better defining the different sections and layout of web pages.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Accordion end-->
+
+    <!-- Trusted Companies Section -->
+    <section class="container d-none d-md-none d-lg-block my-5">
+      <h1 class="text-center fw-bolder">
+        Our Client Companies
+      </h1>
+      <div class="text-center mt-5 d-flex justify-content-between">
+        <img src="./images/company/company-1.png" alt="">
+        <img src="./images/company/company-2.png" alt="">
+        <img src="./images/company/company-3.png" alt="">
+        <img src="./images/company/company-4.png" alt="">
+        <img src="./images/company/company-5.png" alt="">
+        <img src="./images/company/company-6.png" alt="" >
+      </div>
+
+        <div class="container">
+          <div class="company-logos text-center mt-5">
+              <img src="./images/company/ajio.png" alt="AJIO">
+              <img src="./images/company/atos.png" alt="Atos">
+              <img src="./images/company/Axos.png" alt="Axos">
+              <img src="./images/company/blenheim chalcot.png" alt="Blenheim Chalcot" style="width: 300px; height:100px;">
+              <img src="./images/company/dell.png" alt="Dell">
+              <img src="./images/company/Energy.png" alt="Energy">
+              <img src="./images/company/ey.png" alt="EY">
+              <img src="./images/company/IBM.png" alt="IBM">
+              <img src="./images/company/intel.png" alt="Intel">
+              <img src="./images/company/oracle.png" alt="Oracle">
+              <img src="./images/company/paypal.png" alt="Paypal">
+              <img src="./images/company/Progress.png" alt="Progress">
+              <img src="./images/company/samsung.png" alt="Samsung">
+              <img src="./images/company/tcs.png" alt="TCS">
+              <img src="./images/company/tech.png" alt="Tech">
+              <img src="./images/company/volkswagen.jpeg" alt="Volkswagen">
+              <img src="./images/company/wipro.png" alt="Wipro">
+          </div>
+    </section>
+    <!-- Trusted Companies Section -->
+  </main>
+  <!-- Main section end-->
+
+  <!-- Footer Section -->
+  <footer class="container-fluid p-5 mt-5 bg-dark">
+    <section class="text-light p-5 text-center">
+      <i class="fa-solid fa-graduation-cap fs-2"></i>
+      <h1>CodeaiXpert</h1>
+      <p>
+        <small>
+          CodeKart Solutions Private Limited<br>
+          
+        </small>
+        <small>
+          Phase-1, Saraswati Vihar, Duplex Number-2,<br>
+           Backside of Mani Tribhuvan<br> Bhubaneswar, Odisha 751024
+        </small>
+      </p>
+      <p>
+        <small>
+          Privacy Policy | Terms of use
+        </small>
+      </p>
+      <a href="https://www.facebook.com/kamrulhasan.tanmoy.79/" target="_blank" class="me-3 text-light fs-4"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/?lang=en" target="_blank" class="me-3 text-light fs-4"><i
+          class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank" class="me-3 text-light fs-4"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" target="_blank" class="text-light fs-4"><i
+          class="fa-brands fa-youtube"></i></a>
+    </section>
+  </footer>
+  <!-- Footer Section end-->
+
+  <!-- ** Bootstrap js plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <!-- //login page script-->
+  <script>
+    function loginWithGoogle() {
+      // Replace with your Google Client ID
+      const clientId = 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com';
+      const redirectUri = 'YOUR_REDIRECT_URI'; // Specify your redirect URI
+
+      // Construct the OAuth 2.0 URL
+      const authUrl = `https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=email profile openid`;
+
+      // Redirect the user to Google's authentication page
+      window.location.href = authUrl;
+    }
+
+    function loginWithLinkedIn() {
+      // Replace with your LinkedIn Client ID
+      const clientId = 'YOUR_LINKEDIN_CLIENT_ID';
+      const redirectUri = 'YOUR_REDIRECT_URI'; // Specify your redirect URI
+
+      // Construct the OAuth 2.0 URL
+      const authUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=r_liteprofile r_emailaddress`;
+
+      // Redirect the user to LinkedIn's authentication page
+      window.location.href = authUrl;
+    }
+  </script>
+  <!-- dependencies script for testimonials -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  
+</body>
+
+</html>
